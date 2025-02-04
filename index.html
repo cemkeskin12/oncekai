@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sivil toplum kuruluşları için gelişmiş istatistiksel analiz ve değerlendirme çözümleri">
+    <meta name="keywords" content="istatistik, analiz, sivil toplum, değerlendirme, veri analizi">
+    <title>OncekAI - İstatistiksel Analiz & Değerlendirme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <h1>onsek<span class="gradient-text">ai</span></h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#footer">İletişim</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Geleceğin İzleme ve Değerlendirme Aracına Hoşgeldiniz!</h1>
+                <p>Sivil toplum kuruluşlarının performans analizini, gelişmiş istatistiksel testler ve detaylı raporlama sistemleriyle güçlendiriyoruz.</p>
+                <button class="cta-button" onclick="document.getElementById('hakkimizda').scrollIntoView({behavior: 'smooth'})">Hakkımızda</button>
+            </div>
+            <div class="hero-background">
+                <div class="hero-grid"></div>
+                <div class="hero-stars" id="heroStars"></div>
+            </div>
+        </section>
+
+        <section id="hakkimizda" class="about">
+            <div class="about-container">
+                <h2>Hakkımızda</h2>
+                <div class="about-content">
+                    <p class="about-paragraph">
+                        Onsekai ekibi olarak, sivil toplum kuruluşlarının projelerini ve sosyal etki alanlarını bilimsel yöntemlerle analiz ediyor, veriye dayalı kararlar almalarına destek oluyoruz. Gelişmiş istatistiksel test yöntemleri ve interaktif raporlama araçlarımızla, kuruluşların performanslarını şeffaf ve ölçülebilir şekilde değerlendiriyoruz.
+                    </p>
+                    <p class="about-paragraph">
+                        T-Test, ANOVA, non-parametrik testler ve regresyon analizleri gibi bilimsel yöntemlerle verilerinizi analiz ediyor, stratejik kararlarınızı somut verilere dayandırmanızı sağlıyoruz. Modern teknolojilerle desteklenen çözümlerimiz, sosyal projelerin etkisini ölçülebilir kılıyor.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hizmetler" class="services">
+            <h2>Hizmetlerimiz</h2>
+            <div class="service-categories">
+                <div class="category statistical-tests">
+                    <h3>İstatistiksel Testler</h3>
+                    <div class="service-grid">
+                        <div class="service-card" data-service="t-test">
+                            <div class="service-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h4>T-Test Analizleri</h4>
+                            <p>Bağımsız Örneklem ve Eşleştirilmiş T-Testleri</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+
+                        <div class="service-card" data-service="anova">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>ANOVA</h4>
+                            <p>Tek Yönlü ve Tekrarlı Ölçümler ANOVA Analizleri</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+
+                        <div class="service-card" data-service="non-parametric">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Non-Parametrik Testler</h4>
+                            <p>Mann-Whitney U, Wilcoxon, Kruskal-Wallis</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+
+                        <div class="service-card" data-service="correlation">
+                            <div class="service-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4>Korelasyon ve Regresyon</h4>
+                            <p>Pearson, Spearman, Çoklu Regresyon Analizleri</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category other-services">
+                    <h3>Diğer Hizmetler</h3>
+                    <div class="service-grid">
+                        <div class="service-card" data-service="impact">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4>Etki Değerlendirmesi</h4>
+                            <p>Sosyal etki ve maliyet-fayda analizleri</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+
+                        <div class="service-card" data-service="reporting">
+                            <div class="service-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h4>Otomatik Raporlama</h4>
+                            <p>Dinamik dashboard ve özel raporlar</p>
+                            <button class="detail-btn">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <h3>onsek<span class="gradient-text">ai</span></h3>
+                        <p>Sivil toplum kuruluşları için gelişmiş istatistiksel analiz ve değerlendirme çözümleri</p>
+                    </div>
+                    <div class="footer-contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Beşiktaş, İstanbul</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@onsekai.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+90 (212) 555 0000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <h3>Bize Ulaşın</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Adınız">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="E-posta Adresiniz">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder="Mesajınız"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Gönder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2024 onsekai. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
